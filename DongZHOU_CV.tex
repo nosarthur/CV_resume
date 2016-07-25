@@ -1,0 +1,276 @@
+%% $Id: cv-us.tex,v 1.8 2004/12/31 17:07:33 jrblevin Exp $
+%%----------------------------------------------------------------------------
+%% The layout of this resume is based on Michael Forman's CV template
+%% at http://www.Michael-Forman.com/vitae/.  I have modified his template
+%% to work with LaTeX 2e using res.cls instead of res.sty.  I have also
+%% included the hyperref package for including hypertext links in pdfs.
+%%
+%% Content is Copyright (C) 2004 Jason Blevins <jrblevin@sdf.lonestar.org>
+%%----------------------------------------------------------------------------
+%% To Do:
+%%   * Get the pdf information section working with latex 2e
+%%   * Add descriptions of Phi Beta Kappa and Phi Kappa Phi
+%%   * Update address and telephone number
+%%   * Add more details about positions
+%%----------------------------------------------------------------------------
+\RequirePackage{ifthen}
+\newcommand{\ite}{\ifthenelse}
+\newcommand{\bl}{\boolean}
+%-----------------------------------------------------------------------------
+\newboolean{ref}
+\setboolean{ref}{false}
+\newboolean{skill}
+\setboolean{skill}{false}
+\newboolean{pubs}
+\setboolean{pubs}{true}
+\newboolean{talk}
+\setboolean{talk}{false}
+\newboolean{member}
+\setboolean{member}{false}
+
+
+\documentclass[centered,11pt,overlapped]{res}
+%\documentclass[overlapped,line,11pt,draft]{res}
+%-----------------------------------------------------------------------------
+\usepackage[colorlinks,urlcolor=black,bookmarks=true]{hyperref}
+\usepackage{enumitem}
+
+
+%-----------------------------------------------------------------------------
+%% % To enable extended pdf support, add pdftex and the following to the
+%% % hyperref \usepackage line in the [..] section:
+%%
+\hypersetup{
+pdftitle={Curriculum Vitae},
+pdfauthor={Dong Zhou},
+%% pdfcreator={pdfLaTeX},
+%% pdfproducer={$Id: cv-us.tex,v 1.8 2004/12/31 17:07:33 jrblevin Exp $},
+pdfsubject={Curriculum Vitae},
+}
+%% pdfkeywords={Applied Mathematics Economics Computer Science
+%%     Differential Equations TANH method hyperbolic tangent centroid
+%%     decomposition updating singular value decomposition linear algebra
+%%     microeconomics System Administration Linux Unix German}
+%-----------------------------------------------------------------------------
+\def\Cplusplus{{\rm C\raise.5ex\hbox{\small ++}}}
+%-----------------------------------------------------------------------------
+\begin{document}
+
+\name{{\Large \bf Dong Zhou}}
+
+%\address{
+%}
+%\address{
+%}
+% {\verb+http://www.physics.wisc.edu/~nos+}
+
+\begin{resume}
+
+\begin{ncolumn}{2}
+   {\tt zhou.dong@gmail.com} &  (917) 207-8391 (mobile) \\
+   {\tt \href{nosarthur.github.io}{nosarthur.github.io}} &  with work authorization in US
+\end{ncolumn}
+
+%------------------------------------------------------------------------------
+
+\section{\sc Summary}
+A scientist and programmer. 
+Looking for opportunities in applying machine learning to solve social problems.
+Past experience includes image processing, mathematical modeling, computational mathematics/physics, stochastic processes, etc. Familiar with magnetic resonance imaging, quantum computing and biophysics.
+
+%------------------------------------------------------------------------------
+
+
+\section{\sc Skills}
+Python, Matlab, C/\Cplusplus, Linux shell scripts, d3.js, SQL \\
+Machine learning, Image processing, computational physics/mathematics\\
+Mathematical modeling, Optimization with regularization, Stochastic process 
+\ite{\bl{pubs}}{        
+
+
+%---------------------------------------------------------------------------
+%% %% Other possible sections:
+%% \section{\sc Special Skills}
+%% \section{\sc Patents}
+%% \section{\sc Journal Publications}
+%% \section{\sc Refereed Conference Proceedings}
+%% \section{\sc Conference Presentations}
+%------------------------------------------------------------------------------
+
+\begin{format}
+\title{l}\dates{r}\\
+\employer{l}\location{r}\\
+%\body\\
+\end{format}
+
+%---------------------------------------------------------------------------
+
+\section{\sc Education and Experience}
+
+\begin{itemize}
+\item Postdoc in radiology, Weill Medical College of Cornell University \hfill 2012--2016 
+\item Postdoc in physics, Yale University \hfill 2011--2012
+\item {Ph.D in physics, University of Wisconsin-Madison} 
+\hfill {2006--2011} 
+\item {Graduate study in physics, University of Georgia-Athens} \hfill {2004--2006}  
+\item {B.S. in physics, Honored Mixed Class},  
+{Zhejiang University, China } \hfill {2000--2004}  
+\end{itemize}
+
+Reviewer for Journal of Physics A: mathematical and theoretical, IEEE TBME, PLOS ONE, Quantum Information Processing, New Journal of Physics, Medicine, Journal of Neuroscience Methods, NeuroImage, Magnetic Resonance in Medicine, Medical Physics, NMR in Biomedicine
+
+%---------------------------------------------------------------------------
+
+\section{\sc Honors and Awards}
+\begin{itemize}[leftmargin=-0.1in]
+\item International Society for Magnetic Resonance in Medicine (ISMRM) Merit Award, magna cum laude, 2014
+\item International Student Academic Achievement Award, UW-Madison, 2011
+\item Ray and Anne Herb Award for Wisconsin Distinguished Graduate Fellowship, 2008
+\item Emanuel R. Piore Award for Highest Scorer on the Qualifier Exam, UW-Madison, 2007
+\item University Housing's Favorite Instructor Award for Fall 2006, UW-Madison, 2006
+\item Van Vleck Fellowship for Graduate Students in Physics, UW-Madison, 2006
+\item Honored Graduate of Zhejiang University, China, 2004
+\item Honorary Enrollment, Zhejiang University, China, 2000
+\item Tan Jiazhen (C. C. Tan) Scholarship for Outstanding High School Student in Biology, 1999
+\item Kang Hui Scholarship for 1st Place in High School Entrace Exam, Hangzhou, China, 1996
+\end{itemize}
+
+
+%---------------------------------------------------------------------------
+\section{\sc Publications}
+\begin{enumerate}[leftmargin=-0.1in]
+\item {\em Susceptibility underestimation in a high susceptibility
+phantom: dependence on imaging resolution, magnitude
+contrast and other parameters}\\
+{\bf D. Zhou}, J. Zhang, P. Spincemaille, Y. Wang, submitted to Magn Reson Med, (2016)
+\item {\em Preconditioned Total Field Inversion (TFI) Method for
+Quantitative Susceptibility Mapping} \\
+Z. Liu, Y. Kee, {\bf D. Zhou}, Y. Wang, and P. Spincemaille, accepted by Magn Reson Med (2016)
+\item {\em Cerebral Metabolic Rate of Oxygen (CMRO2) Mapping with Hyperventilation Challenge using Quantitative Susceptibility Mapping (QSM)}\\
+J. Zhang, {\bf D. Zhou}, P. Spincemaille, Y. Wang, accepted by Magn Reson Med, (2016)
+\item {\em Quantitative susceptibility mapping and R2* measured changes during white matter lesion development in multiple sclerosis: myelin breaking down, myelin debris degradation and removal, and iron accumulation }\\
+Y. Zhang, S.A. Gauthier, A. Gupta, W. Chen, J. Comunale, G.C.-Y. Chiang, {\bf D. Zhou}, G. Askin, W. Zhu, D. Pitt, Y. Wang, acceptted by AJNR,  (2016).
+\item {\em Longitudinal change in magnetic susceptibility of new enhanced multiple sclerosis (MS) lesions measured on serial quantitative susceptibility mapping (QSM)}\\
+Y. Zhang, S.A. Gauthier, A. Gupta, J. Comunale, G. C.-Y. Chiang, {\bf D. Zhou}, W. Chen, A.E. Giambrone, W. Zhu, Y. Wang, accepted by JMRI (2016).
+\item {\em Three-dimensional MR Phase Unwrapping via Dual Decomposition} \\
+J. Dong, F. Chen,  {\bf D. Zhou}, T. Liu, Z. Yu, and Y. Wang, accepted by Magn Reson Med (2016).
+\item {\em Increase in magnetic susceptibility after MS lesion formation and potential diagnostic utility} \\
+Y. Zhang, S. Gauthier, L. Tu, A. Gupta, J. Comunale, G.C.-Y. Chiang, {\bf D. Zhou}, Y. Wang, MULTIPLE SCLEROSIS JOURNAL 21 502 (2016).
+\item {\em Simultaneous Phase Unwrapping and Removal of chemical Shift (SPURS) using Graph Cuts: Application in Quantitative Susceptibility Mapping}\\
+J. Dong, T. Liu, F. Chen, {\bf D. Zhou}, A. Dimov, A. Raj, Q. Cheng, P. Spincemaille, and Y. Wang, IEEE TMI 34 (2) 531 (2015).
+\item {\em Background field removal by solving the Laplacian boundary value problem}\\
+{\bf D. Zhou}, T. Liu, P. Spincemaille, and Y. Wang, NMR in Biomedicine, 27 (3), 312 (2014).
+\item {\em An Iterative Spherical Mean Value (iSMV) Method for Background Field Removal in MRI}\\
+Y. Wen, {\bf D. Zhou}, T. Liu, P. Spincemaille, and Y. Wang, Magn Reson Med 72 (4) 1065 (2014). 
+\item {\em Magnetic susceptibility anisotropy: cylindrical symmetry from macroscopically ordered anisotropic molecules and accuracy of MRI measurements using few orientations}\\
+C. Wisnieff, T. Liu, P. Spincemaille, S. Wang, {\bf D. Zhou}, and Y. Wang,  NeuroImage 70, 363 (2013).
+\item{\em Mediated gates between spin qubits} \\
+J. Fei, {\bf D. Zhou}, Y.-P. Shim, S. Oh, X. Hu, and M. Friesen, Phys. Rev. A 86, 062328 (2012). arXiv:1207.6063 
+\item{\em Cavity-assisted quantum bath engineering with a superconducting qubit}\\
+K. W. Murch, U. Vool, {\bf D. Zhou}, S. J. Weber, S.M. Girvin, and I. Siddiqi,
+Phys. Rev. Lett. 109, 163602 (2012); arXiv:1207.0053
+\item{\em Phenomenological noise model for superconducting qubits:
+two-state fluctuators and 1/f noise}\\
+{\bf D. Zhou} and R. Joynt, Supercond. Sci. Techno. 25, 045003 (2012); arXiv:1102.5766 
+\item{\em Topology of entanglement evolution of two qubits}\\
+{\bf D. Zhou}, G.-W. Chern, J. Fei, and R. Joynt, 
+        Int. J. Mod. Phys. B 26, 1250054 (2012); arXiv:1007.1749
+\item{\em Disappearance of entanglement: a topological point of view} \\
+{\bf D. Zhou} and R. Joynt, QIP 11, 571 (2012); arXiv:1006.5474
+\item{\em Suppression of decoherence and disentanglement by the exchange interaction}\\
+A. De, A. Lang, {\bf D. Zhou}, and R. Joynt, Phys. Rev. A 83, 042331 (2011); arXiv:1006.5943
+\item {\em Quasi-Hamiltonian Method for Computation of Decoherence Rates.}\\
+R. Joynt, {\bf D. Zhou} and Q.-H. Wang, Int. J. Mod. Phys. B 25, 2115 (2011); arXiv:0906.2843
+\item {\em Noise-induced looping on the Bloch sphere: Oscillatory effects in dephasing of qubits subject to broad-spectrum noise.}\\
+{\bf D. Zhou} and R. Joynt, Phys. Rev. A 81, 010103 (2010); arXiv:0907.0463 
+\item {\em Nacre Protein Fragment Templates Lamellar Aragonite Growth}\\
+RA Metzler, JS Evans, CE Killian, {\bf D Zhou}, TH Churchill, N Appathurai, SN Coppersmith, PUPA Gilbert, J. Am. Chem. Soc. 132, 6329-6334 (2010). 
+\item {\em X-ray photoelectron emission spectromicroscopic analysis of arborescent lycopsid cell wall composition and Carboniferous coal ball preservation.}\\
+C. K. Boyce, M. Abrecht, {\bf D. Zhou}, and P.U.P.A. Gilbert, Int. J. Coal Geol. 83, 146-153 (2010).
+\item {\em Disentanglement and decoherence from classical non-Markovian noise: Random telegraph noise.}\\
+{\bf D. Zhou}, A. Lang, and R. Joynt, QIP 9, 727 (2010); arXiv:0912.3313 
+\item {\em Two-particle quantum walks applied to the graph isomorphism problem.} \\
+J. Gamble, M. Friesen, {\bf D. Zhou}, R. Joynt, and S.N. Coppersmith, Phys. Rev. A 81, 052313 (2010); arXiv:1002.3003
+\item {\em A high-resolution chemical and structural study of framboidal pyrite formed within a low-temperature bacterial biofilm.}\\
+L.C.W. MacLean, T. Tyliszczak, P.U.P.A. Gilbert, {\bf D. Zhou}, T.J. Pray, T.C. Onstott, G. Southam.  Geobiology 6, 471-480 (2008).
+\item {\em Gradual Ordering in Red Abalone Nacre.}\\
+P.U.P.A. Gilbert, R. A. Metzler, {\bf D. Zhou}, A. Scholl, A. Doran, A. Young, M. Kunz, N. Tamura, S. N. Coppersmith. J. Am. Chem. Soc. 130, 17519-17527 (2008); arXiv:0710.4573
+\item {\em Assignment of polarization-dependent peaks in carbon K-edge spectra from biogenic and geologic aragonite.}\\
+{\bf D. Zhou}, R.A. Metzler, T. Tyliszczak, J. Guo, M. Abrecht, S.N. Coppersmith, P.U.P.A. Gilbert. J. Phys. Chem. B 112, 13128-13135 (2008). 
+\item {\em Probing the organic-mineral interface in model biominerals.}\\
+R. A. Metzler, I.-W. Kim, K. Delak, J.S. Evans, {\bf D. Zhou}, E. Beniash, F. Wilt, M. Abrecht, J.-W. Chiou, J. Guo, S.N. Coppersmith, P.U.P.A. Gilbert.  Langmuir 24, 2680-2687 (2008). 
+\item {\em Polarization-dependent imaging contrast in abalone shells.}\\
+R.A. Metzler, {\bf D. Zhou}, M. Abrecht, J.-W. Chiou, J. Guo, D. Ariosa, S.N. Coppersmith, P.U.P.A. Gilbert. Phys. Rev. B 77, 064110 (2008).
+\end{enumerate}
+
+}
+%------------------------------------------------------------------------------
+
+\ite{\bl{talk}}{        
+
+\section{\sc Presentations}
+
+%% % Later, when the list (hopefully) gets longer, use subsections
+%% % by year like this:
+%% \section{\sc \small \hspace{8mm}2003}
+
+{\em Two-Qubit Disentanglement and Decoherence from Classical Random Telegraph Noise.}\\
+\hspace*{5cm} APS March Meeting, Portland, OR. March 19, 2010.
+
+{\em  New Method for the Calculation of Qubit Decoherence in the Presence of Random Telegraph and $1/f$ Noise.}\\
+\hspace*{5cm} APS March Meeting, Pittsburgh, PA. March 19, 2009.
+}
+
+
+%\newpage
+%==============================================================================
+%\newpage
+%\opening
+%---------------------------------------------------------------------------
+
+%%\vspace{\fill}\ \newline
+%%{\tiny \rm $ $RCSfile: cv-us.tex,v $ $ }
+%%{\tiny \rm $ $Date: 2004/12/31 17:07:33 $ $ }
+%%{\tiny \rm $ $Revision: 1.8 $ $ }
+
+%------------------------------------------------------------------------------
+
+\ite{\bl{ref}}{        
+
+%\newpage
+%\opening
+\section{\sc References}
+
+%% Sample reference sheet:
+%% http://www.uwm.edu/Dept/CDC/resrefer.htm 
+%% References DO NOT belong on the resume. 
+%% They should be listed on a separate sheet. 
+%% Send the references with the resume only when 
+%% specifically requested by the employer. 
+%% There is no need to state "References available upon request." 
+%% It is assumed that you will provide them. 
+
+
+%
+Reference A. Person \newline
+Sandia National Laboratories \newline
+000-000-0000 \newline
+{\tt devnull@Sandia.GOV} \newline
+Impressive Title for Person
+
+
+%
+Reference A. Person \newline
+Sandia National Laboratories \newline
+000-000-0000 \newline
+{\tt devnull@Sandia.GOV} \newline
+Impressive Title for Person
+
+
+
+}
+
+
+\end{resume}
+
+\end{document}

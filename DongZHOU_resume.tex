@@ -1,0 +1,156 @@
+%% $Id: cv-us.tex,v 1.8 2004/12/31 17:07:33 jrblevin Exp $
+%%----------------------------------------------------------------------------
+%% The layout of this resume is based on Michael Forman's CV template
+%% at http://www.Michael-Forman.com/vitae/.  I have modified his template
+%% to work with LaTeX 2e using res.cls instead of res.sty.  I have also
+%% included the hyperref package for including hypertext links in pdfs.
+%%
+%% Content is Copyright (C) 2004 Jason Blevins <jrblevin@sdf.lonestar.org>
+%%----------------------------------------------------------------------------
+%% To Do:
+%%   * Get the pdf information section working with latex 2e
+%%   * Add descriptions of Phi Beta Kappa and Phi Kappa Phi
+%%   * Update address and telephone number
+%%   * Add more details about positions
+%%----------------------------------------------------------------------------
+\RequirePackage{ifthen}
+\newcommand{\ite}{\ifthenelse}
+\newcommand{\bl}{\boolean}
+%-----------------------------------------------------------------------------
+\newboolean{ref}
+\setboolean{ref}{false}
+\newboolean{skill}
+\setboolean{skill}{false}
+\newboolean{pubs}
+\setboolean{pubs}{true}
+\newboolean{talk}
+\setboolean{talk}{false}
+\newboolean{member}
+\setboolean{member}{false}
+
+
+\documentclass[centered,11pt,overlapped]{res}
+%\documentclass[overlapped,line,11pt,draft]{res}
+%-----------------------------------------------------------------------------
+\usepackage[colorlinks,urlcolor=black,bookmarks=true]{hyperref}
+\usepackage{enumitem}
+
+
+%-----------------------------------------------------------------------------
+%% % To enable extended pdf support, add pdftex and the following to the
+%% % hyperref \usepackage line in the [..] section:
+%%
+\hypersetup{
+pdftitle={Curriculum Vitae},
+pdfauthor={Dong Zhou},
+%% pdfcreator={pdfLaTeX},
+%% pdfproducer={$Id: cv-us.tex,v 1.8 2004/12/31 17:07:33 jrblevin Exp $},
+pdfsubject={Curriculum Vitae},
+}
+%% pdfkeywords={Applied Mathematics Economics Computer Science
+%%     Differential Equations TANH method hyperbolic tangent centroid
+%%     decomposition updating singular value decomposition linear algebra
+%%     microeconomics System Administration Linux Unix German}
+%-----------------------------------------------------------------------------
+\def\Cplusplus{{\rm C\raise.5ex\hbox{\small ++}}}
+%-----------------------------------------------------------------------------
+\begin{document}
+
+\name{{\Large \bf Dong Zhou}}
+
+%\address{
+%}
+%\address{
+%}
+% {\verb+http://www.physics.wisc.edu/~nos+}
+
+\begin{resume}
+
+\begin{ncolumn}{2}
+   {\tt zhou.dong@gmail.com} &  (917) 207-8391 (mobile) \\
+   {\tt \href{nosarthur.github.io}{nosarthur.github.io}} &  with work authorization in US
+\end{ncolumn}
+
+%------------------------------------------------------------------------------
+
+\section{\sc Summary}
+A scientist and programmer. 
+Looking for opportunities in applying machine learning to solve social problems, especially in healthcare and education.
+Past experience includes image processing, mathematical modeling, computational mathematics/physics, stochastic process. Familiar with magnetic resonance imaging, quantum computing and biophysics.
+
+%------------------------------------------------------------------------------
+
+\section{\sc Skills}
+Python, Matlab, C/\Cplusplus, Linux shell scripts, d3.js, SQL \\
+Machine learning, Image processing, computational physics/mathematics\\
+Mathematical modeling, Optimization with regularization, Stochastic process 
+\ite{\bl{pubs}}{        
+
+\begin{format}
+\title{l}\dates{r}\\
+\employer{l}\location{r}\\
+%\body\\
+\end{format}
+
+%---------------------------------------------------------------------------
+
+\section{\sc Experience}
+
+\begin{itemize}
+\item Postdoc in radiology, Weill Medical College of Cornell University \hfill 2012--2016 
+
+Solving ill-posed inverse problems in medical imaging.
+Developing probes for transcranial magnetic stimulation.
+\item Postdoc in physics, Yale University \hfill 2011--2012
+
+Simulating solid state quantum optics (circuit QED) systems. 
+Developing schemes for quantum control and quantum gate.
+\item {Research assistant, University of Wisconsin-Madison} \hfill {2007--2011} 
+
+Studying quantum systems in the presence of classical noises.
+Developing scheme for quantum gate. 
+Developing algorithm for graph isomorphism problem.
+Performing X-ray diffraction and synchrotron radiation experiments on nacre (mother of pearl) and other samples.
+\item {Teaching assistant, University of Wisconsin-Madison} \hfill {2006--2006} 
+
+Teaching introductory physics courses.
+\item {Teaching assistant, University of Georgia-Madison} \hfill {2004--2006} 
+
+Teaching introductory physics courses.
+
+
+\section{\sc Education}
+\item {Ph.D in physics, University of Wisconsin-Madison} \hfill {2006--2011} 
+\item {Graduate study in physics, University of Georgia-Athens} \hfill {2004--2006}  
+\item {B.S. in physics, Honored Mixed Class},  
+{Zhejiang University, China } \hfill {2000--2004}  
+\end{itemize}
+
+
+%---------------------------------------------------------------------------
+
+\section{\sc Honors and Awards}
+\begin{itemize}[leftmargin=-0.1in]
+\item International Society for Magnetic Resonance in Medicine (ISMRM) Merit Award, magna cum laude, 2014
+\item International Student Academic Achievement Award, UW-Madison, 2011
+\item Ray and Anne Herb Award for Wisconsin Distinguished Graduate Fellowship, 2008
+\item Emanuel R. Piore Award for Highest Scorer on the Qualifier Exam, UW-Madison, 2007
+\item University Housing's Favorite Instructor Award for Fall 2006, UW-Madison, 2006
+\item Van Vleck Fellowship for Graduate Students in Physics, UW-Madison, 2006
+\item Honored Graduate of Zhejiang University, China, 2004
+\item Honorary Enrollment, Zhejiang University, China, 2000
+\item Tan Jiazhen (C. C. Tan) Scholarship for Outstanding High School Student in Biology, 1999
+\item Kang Hui Scholarship for 1st Place in High School Entrace Exam, Hangzhou, China, 1996
+\end{itemize}
+
+
+%---------------------------------------------------------------------------
+\section{\sc Publications and Services}
+Author for 27 journal articles and reviewer for 11 journals.
+}
+%------------------------------------------------------------------------------
+
+
+\end{resume}
+
+\end{document}

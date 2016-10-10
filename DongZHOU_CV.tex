@@ -17,16 +17,16 @@
 \newcommand{\ite}{\ifthenelse}
 \newcommand{\bl}{\boolean}
 %-----------------------------------------------------------------------------
-\newboolean{ref}
-\setboolean{ref}{false}
-\newboolean{skill}
-\setboolean{skill}{false}
 \newboolean{pubs}
 \setboolean{pubs}{true}
+\newboolean{review}
+\setboolean{review}{false}
+\newboolean{short_pub_review}
+\setboolean{short_pub_review}{false}
 \newboolean{talk}
 \setboolean{talk}{false}
-\newboolean{member}
-\setboolean{member}{false}
+\newboolean{ref}
+\setboolean{ref}{false}
 
 
 \documentclass[centered,11pt,overlapped]{res}
@@ -85,7 +85,6 @@ Familiar with magnetic resonance imaging, quantum computing and biophysics.
 Python, C/\Cplusplus, Matlab, Linux shell scripts, d3.js, SQL \\
 Machine learning, Image processing, computational physics/mathematics\\
 Mathematical modeling, Optimization with regularization, Stochastic process 
-\ite{\bl{pubs}}{        
 
 
 %---------------------------------------------------------------------------
@@ -143,6 +142,9 @@ Reviewer for Journal of Physics A: mathematical and theoretical, IEEE TBME, PLOS
 \item {\em Magnetic resonance imaging systems and methods for optimized parallel receive, excite, and shim (oPRES) } \\
 Hui Han, Yi Wang, John Stager, Junghun Cho, and {\bf Dong Zhou}, pending
 \end{enumerate}
+
+%---------------------------------------------------------------------------
+\ite{\bl{pubs}}{        
 
 \section{\sc Publications}
 \begin{enumerate}[leftmargin=-0.1in]
@@ -215,6 +217,14 @@ R.A. Metzler, {\bf D. Zhou}, M. Abrecht, J.-W. Chiou, J. Guo, D. Ariosa, S.N. Co
 \end{enumerate}
 
 }
+
+%---------------------------------------------------------------------------
+\ite{\bl{short_pub_review}}{        
+
+\section{\sc Publications and Services}
+Author for 30 journal articles and reviewer for 11 journals.
+}
+
 %------------------------------------------------------------------------------
 
 \ite{\bl{talk}}{        
@@ -230,6 +240,7 @@ R.A. Metzler, {\bf D. Zhou}, M. Abrecht, J.-W. Chiou, J. Guo, D. Ariosa, S.N. Co
 
 {\em  New Method for the Calculation of Qubit Decoherence in the Presence of Random Telegraph and $1/f$ Noise.}\\
 \hspace*{5cm} APS March Meeting, Pittsburgh, PA. March 19, 2009.
+
 }
 
 

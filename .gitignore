@@ -1,3 +1,4 @@
-*.pdf
+others/
 enumitem.sty
 *.swp
+*.log

@@ -1,28 +1,28 @@
-Quantitative Susceptibility Mapping (QSM)-Based Cerebral Metabolic Rate of Oxygen (CMRO2) Mapping with Minimum Local Variance (MLV)
+Quantitative Susceptibility Mapping Based Cerebral Metabolic Rate of Oxygen (CMRO2) Mapping with Minimum Local Variance (MLV)
 Quantitative susceptibility mapping of magnetic quadrupole moments
 Susceptibility underestimation in a high susceptibility phantom: dependence on imaging resolution, magnitude contrast and other parameters
-Preconditioned Total Field Inversion (TFI) Method for Quantitative Susceptibility Mapping
-Cerebral Metabolic Rate of Oxygen (CMRO2) Mapping with Hyperventilation Challenge using Quantitative Susceptibility Mapping (QSM)
+Preconditioned Total Field Inversion Method for Quantitative Susceptibility Mapping
+Cerebral Metabolic Rate of Oxygen (CMRO2) Mapping with Hyperventilation Challenge using Quantitative Susceptibility Mapping
 Quantitative susceptibility mapping and R2* measured changes during white matter lesion development in multiple sclerosis: myelin breaking down, myelin debris degradation and removal, and iron accumulation
-Three-dimensional MR Phase Unwrapping via Dual Decomposition
+Three-dimensional MRI Phase Unwrapping via Dual Decomposition
 On the influence of zero-padding on the nonlinear operations in Quantitative Susceptibility Mapping
-Longitudinal change in magnetic susceptibility of new enhanced multiple sclerosis (MS) lesions measured on serial quantitative susceptibility mapping (QSM)
-Increase in magnetic susceptibility after MS lesion formation and potential diagnostic utility
-Simultaneous Phase Unwrapping and Removal of chemical Shift (SPURS) using Graph Cuts: Application in Quantitative Susceptibility Mapping
+Longitudinal change in magnetic susceptibility of new enhanced multiple sclerosis lesions measured on serial quantitative susceptibility mapping
+Increase in magnetic susceptibility after multiple sclerosis lesion formation and potential diagnostic utility
+Simultaneous Phase Unwrapping and Removal of chemical Shift using Graph Cuts: Application in Quantitative Susceptibility Mapping
 Background field removal by solving the Laplacian boundary value problem
-An Iterative Spherical Mean Value (iSMV) Method for Background Field Removal in MRI
+An Iterative Spherical Mean Value Method for Background Field Removal in MRI
 Magnetic susceptibility anisotropy: cylindrical symmetry from macroscopically ordered anisotropic molecules and accuracy of MRI measurements using few orientations
-Mediated gates between spin qubits
+Mediated gates between spin qubit
 Cavity-assisted quantum bath engineering with a superconducting qubit
-Phenomenological noise model for superconducting qubits: two-state fluctuators and 1/f noise
-Topology of entanglement evolution of two qubits
+Phenomenological noise model for superconducting qubit: two-state fluctuators and 1/f noise
+Topology of entanglement evolution of two qubit
 Disappearance of entanglement: a topological point of view
-Suppression of decoherence and disentanglement by the exchange interaction
+Suppression of decoherence and dis-entanglement by the exchange interaction
 Quasi-Hamiltonian Method for Computation of Decoherence Rates
-Noise-induced looping on the Bloch sphere: Oscillatory effects in dephasing of qubits subject to broad-spectrum noise
+Noise-induced looping on the Bloch sphere: Oscillatory effects in dephasing of qubit subject to broad-spectrum noise
 Nacre Protein Fragment Templates Lamellar Aragonite Growth
 X-ray photoelectron emission spectromicroscopic analysis of arborescent lycopsid cell wall composition and Carboniferous coal ball preservation
-Disentanglement and decoherence from classical non-Markovian noise: Random telegraph noise
+Dis-entanglement and decoherence from classical non-Markovian noise: Random telegraph noise
 Two-particle quantum walks applied to the graph isomorphism problem
 A high-resolution chemical and structural study of framboidal pyrite formed within a low-temperature bacterial biofilm
 Gradual Ordering in Red Abalone Nacre

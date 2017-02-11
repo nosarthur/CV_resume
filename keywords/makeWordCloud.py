@@ -14,7 +14,8 @@ def make_wordcloud(filename, titles):
     for t in titles:
         counts.update(t)
     pairs = [(w, c) for (w, c) in counts.items() if c > 1]
-    wordcloud = WordCloud(background_color=None, mode='RGBA',random_state=42).generate_from_frequencies(pairs)
+    wordcloud = WordCloud(background_color=None, mode='RGBA',
+                          random_state=42).generate_from_frequencies(pairs)
     print counts
     plt.figure()
     plt.imshow(wordcloud)

@@ -1,3 +1,4 @@
+Cardiac Quantitative Susceptibility Mapping (QSM) for Heart Chamber Oxygenation
 Quantitative Susceptibility Mapping Based Cerebral Metabolic Rate of Oxygen (CMRO2) Mapping with Minimum Local Variance (MLV)
 Quantitative susceptibility mapping of magnetic quadrupole moments
 Susceptibility underestimation in a high susceptibility phantom: dependence on imaging resolution, magnitude contrast and other parameters

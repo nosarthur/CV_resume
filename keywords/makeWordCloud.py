@@ -22,20 +22,24 @@ def make_wordcloud(filename, titles):
     plt.axis("off")
     plt.savefig(filename, bbox_inches='tight')
 
+
 def tokenize_text(stopwords, text):
     ''' split text, stem word, remove stopwords '''
     lemma = WordNetLemmatizer()
 
     tokenizer = RegexpTokenizer(r'\w+')
     return [lemma.lemmatize(w.lower()) for w in tokenizer.tokenize(text)
-                if w.lower() not in stopwords]
+            if w.lower() not in stopwords]
+
 
 if __name__ == '__main__':
 
     stopwords = set(stopwords.words('english'))
+    stopwords.add('using')
+
     new_tokenizer = partial(tokenize_text, stopwords)
     fin, fout = 'paper-titles.txt', 'wordcloud.png'
 
     with open(fin) as f:
-        titles = [new_tokenizer(line) for line  in f]
+        titles = [new_tokenizer(line) for line in f]
         make_wordcloud(fout, titles)

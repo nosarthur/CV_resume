@@ -36,6 +36,7 @@ if __name__ == '__main__':
 
     stopwords = set(stopwords.words('english'))
     stopwords.add('using')
+    stopwords.add('dis')
 
     new_tokenizer = partial(tokenize_text, stopwords)
     fin, fout = 'paper-titles.txt', 'wordcloud.png'

@@ -5,4 +5,4 @@ cv: DongZHOU_CV.tex
 resume: DongZHOU_resume.tex
 	pdflatex DongZHOU_resume.tex
 cp:
-	cp *pdf ~/storage/downloads/
+	cp *pdf ~/Downloads/

@@ -1,3 +1,5 @@
+.PHONY: cp
+
 all: cv resume
 
 cv: DongZHOU_CV.tex

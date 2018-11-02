@@ -5,6 +5,7 @@
 %\documentclass[overlapped,line,11pt,draft]{res}
 %-----------------------------------------------------------------------------
 \usepackage[colorlinks,urlcolor=black,bookmarks=true]{hyperref}
+\usepackage[left=2cm, right=4cm, top=2cm, bottom=2cm]{geometry}
 \usepackage{enumitem}
 
 
@@ -13,7 +14,7 @@
 %% % hyperref \usepackage line in the [..] section:
 %%
 \hypersetup{
-pdftitle={Curriculum Vitae},
+pdftitle={Dong Zhou},
 pdfauthor={Dong Zhou},
 pdfcreator={pdfLaTeX},
 %% pdfproducer={$Id: cv-us.tex,v 1.8 2004/12/31 17:07:33 jrblevin Exp $},
@@ -45,14 +46,14 @@ pdfsubject={Curriculum Vitae},
 
 \section{\sc Summary}
 A scientist and programmer.
-Author of 30+ journal articles with 1000+ citations. Reviewer for 10+ journals.
+Author of 30+ journal articles with 1000+ citations.
+Erd\"{o}s number $\le$ 5.
 Familiar with magnetic resonance imaging, quantum computing, and biophysics.
 
 %------------------------------------------------------------------------------
 
-
 \section{\sc Skills}
-Python, C/\Cplusplus, Go, Matlab, AWS, SQL\\
+Python, Go, C/\Cplusplus, AWS\\
 Computational physics/mathematics, Image processing, Machine learning\\
 Mathematical modeling, Optimization with regularization, Stochastic processes
 
@@ -69,36 +70,37 @@ Mathematical modeling, Optimization with regularization, Stochastic processes
 \begin{itemize}[leftmargin=-0.02in]
 \item Senior scientist, Schr\"odinger Inc. \hfill 2016-now
 
-Implement library for molecular dynamics trajectories analysis using Python and \Cplusplus.
+Implement library for molecular dynamics trajectory analysis (Python, \Cplusplus).
+Maintain scientific computing web services (AWS, Go, Python, PostgreSQL, Polymer.js).
 Maintain atom mapping module (subgraph isomorphism) for free energy perturbation.
-Maintain scientific computing services using AWS, Go, Python, PostgreSQL, and Polymer.js.
 
 \item Postdoc in radiology, Weill Medical College of Cornell University \hfill 2012--2016
 
 Solved ill-posed inverse problems in medical imaging such as magnetic susceptibility and
-susceptibility tensor imaging, magnetic quadrupole imaging, phase unwrapping, etc,
-using Matlab, C, and \Cplusplus.
-Developed probes for transcranial magnetic stimulation, both in simulation using COMSOL multiphysics, and on hardware.
+susceptibility tensor imaging, magnetic quadrupole imaging, 3D phase unwrapping
+(Matlab, C/\Cplusplus).
+Developed probes for transcranial magnetic stimulation both in simulation (COMSOL multiphysics)
+and on hardware (electronics, 3D printing).
 
 \item Postdoc in physics, Yale University \hfill 2011--2012
 
-Developed state preparation scheme using quantum bath engineering, and
-two-qubit CNOT gate scheme using adiabatic phase on circuit QED hardware (3D transmon).
+Developed state preparation scheme using quantum bath engineering, and adiabatic
+phase based two-qubit CNOT gate scheme on circuit QED hardware (3D transmon).
 Simulated these schemes using Python package QuTip.
 
 \item {Research assistant, University of Wisconsin-Madison} \hfill {2007--2011}
 
-Solved open quantum systems dynamics in the presence of classical noises
-(stochastic processes) both analytically and numerically using Matlab and \Cplusplus.
+Solved open quantum systems dynamics in the presence of classical stochastic noises
+both analytically and numerically (Matlab, \Cplusplus).
 Developed schemes for quantum gate, quantum control, and entanglement preparation
 for quantum dot systems.
 Developed algorithm for graph isomorphism problem using continuous-time quantum random walk.
-Performed X-ray diffraction and synchrotron radiation (X-ray absorption near edge spectroscopy and microscopy) experiments on nacre and other biological samples.
+Performed X-ray diffraction and synchrotron radiation experiments (X-ray absorption near edge spectroscopy and microscopy) on nacre and other biological samples.
 
 \end{itemize}
 
 \ite{\bl{review}}{
-Reviewer for J. Phys. A: mathematical and theoretical, IEEE TBME, PLOS ONE, Quantum Information Processing, New J. Phys., Medicine, J. Neurosci. Methods, NeuroImage, Magnetic Resonance in Medicine, Medical Physics, NMR in Biomedicine, Int. J. Mod. Phys. B
+Reviewer for J. Phys. A, IEEE TBME, PLOS ONE, Quantum Information Processing, New J. Phys., Medicine, J. Neuroscience Methods, NeuroImage, Magnetic Resonance in Medicine, Medical Physics, NMR in Biomedicine, Int. J. Mod. Phys. B
 }
 
 \section{\sc Education}
@@ -110,6 +112,8 @@ Reviewer for J. Phys. A: mathematical and theoretical, IEEE TBME, PLOS ONE, Quan
 \end{itemize}
 
 %---------------------------------------------------------------------------
+
+\ite{\bl{awards}}{
 
 \section{\sc Honors and Awards}
 \begin{itemize}[leftmargin=-0.02in]
@@ -124,14 +128,17 @@ Reviewer for J. Phys. A: mathematical and theoretical, IEEE TBME, PLOS ONE, Quan
 \item Tan Jiazhen (C. C. Tan) Scholarship for Outstanding High School Student in Biology, 1999
 \item Kang Hui Scholarship for Highest Scorer in High School Entrance Exam, Hangzhou, China, 1996
 \end{itemize}
-
+}
 
 %---------------------------------------------------------------------------
+\ite{\bl{patents}}{
+
 \section{\sc Patents}
 \begin{enumerate}[leftmargin=-0.02in]
 \item {\em Magnetic resonance imaging systems and methods for optimized parallel receive, excite, and shim (oPRES) } \\
 Hui Han, Yi Wang, John Stager, Junghun Cho, and {\bf Dong Zhou}, pending
 \end{enumerate}
+}
 
 %---------------------------------------------------------------------------
 \ite{\bl{pubs}}{

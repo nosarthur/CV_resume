@@ -8,15 +8,16 @@ from nltk.stem import WordNetLemmatizer
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud
 
+
 def make_wordcloud(filename, titles):
-    print filename, ' make_wordcloud'
+    print(filename, ' make_wordcloud')
     counts = Counter()
     for t in titles:
         counts.update(t)
     pairs = [(w, c) for (w, c) in counts.items() if c > 1]
     wordcloud = WordCloud(background_color=None, mode='RGBA',
                           random_state=42).generate_from_frequencies(pairs)
-    print counts
+    print(counts)
     plt.figure()
     plt.imshow(wordcloud)
     plt.axis("off")

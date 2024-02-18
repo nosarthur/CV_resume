@@ -10,37 +10,42 @@ from wordcloud import WordCloud
 
 
 def make_wordcloud(filename, titles):
-    print(filename, ' make_wordcloud')
+    print(filename, " make_wordcloud")
     counts = Counter()
     for t in titles:
         counts.update(t)
-    pairs = [(w, c) for (w, c) in counts.items() if c > 1]
-    wordcloud = WordCloud(background_color=None, mode='RGBA',
-                          random_state=42).generate_from_frequencies(pairs)
+    pairs = {w: c for (w, c) in counts.items() if c > 1}
+    # pairs = counts
+    wordcloud = WordCloud(
+        background_color=None, mode="RGBA", random_state=42
+    ).generate_from_frequencies(pairs)
     print(counts)
     plt.figure()
     plt.imshow(wordcloud)
     plt.axis("off")
-    plt.savefig(filename, bbox_inches='tight')
+    plt.savefig(filename, bbox_inches="tight")
 
 
 def tokenize_text(stopwords, text):
-    ''' split text, stem word, remove stopwords '''
+    """split text, stem word, remove stopwords"""
     lemma = WordNetLemmatizer()
 
-    tokenizer = RegexpTokenizer(r'\w+')
-    return [lemma.lemmatize(w.lower()) for w in tokenizer.tokenize(text)
-            if w.lower() not in stopwords]
+    tokenizer = RegexpTokenizer(r"\w+")
+    return [
+        lemma.lemmatize(w.lower())
+        for w in tokenizer.tokenize(text)
+        if w.lower() not in stopwords
+    ]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
 
-    stopwords = set(stopwords.words('english'))
-    stopwords.add('using')
-    stopwords.add('dis')
+    stopwords = set(stopwords.words("english"))
+    stopwords.add("using")
+    stopwords.add("dis")
 
     new_tokenizer = partial(tokenize_text, stopwords)
-    fin, fout = 'paper-titles.txt', 'wordcloud.png'
+    fin, fout = "paper-titles.txt", "wordcloud.png"
 
     with open(fin) as f:
         titles = [new_tokenizer(line) for line in f]
